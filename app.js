@@ -26,8 +26,8 @@ const campgroundRoutes = require("./routes/campgrounds");
 const reviewRoutes = require("./routes/reviews");
 const userRoutes = require("./routes/users");
 
-// const dbURL = process.env.DB_URL;
-const dbURL = "mongodb://localhost:27017/yelp-camp";
+const dbURL = process.env.DB_URL;
+// const dbURL = "mongodb://localhost:27017/yelp-camp";
 
 const flash = require('connect-flash');
 const mongoSanitize = require('express-mongo-sanitize');
