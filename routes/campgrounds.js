@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const catchAsync = require("../utils/catchAsync");
-const {isLoggedIn, isAuthor, validateCampground} = require("../middleware");
+const {isLoggedIn, isAuthor, validateCampground} = require("../authMiddleware");
 const campgrounds = require("../controllers/campgrounds");
 
 const multer = require("multer");
